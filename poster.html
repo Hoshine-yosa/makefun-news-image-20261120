@@ -33,7 +33,7 @@
     .page {
       width: 1024px;
       height: 1024px;
-      padding: 18px 26px;
+      padding: 12px 24px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -44,11 +44,11 @@
     .masthead {
       text-align: center;
       border-bottom: 3.5px double var(--ink-dark);
-      padding-bottom: 6px;
+      padding-bottom: 5px;
     }
 
     .masthead-title {
-      font-size: 52px;
+      font-size: 44px;
       font-weight: 900;
       letter-spacing: 3px;
       line-height: 1;
@@ -57,14 +57,14 @@
     }
 
     .masthead-date {
-      margin-top: 6px;
+      margin-top: 5px;
       background-color: var(--accent);
       color: var(--bg-paper);
       font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 900;
       letter-spacing: 4px;
-      padding: 5px 14px;
+      padding: 4px 14px;
       text-transform: uppercase;
     }
 
@@ -72,14 +72,14 @@
     .ticker {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       background-color: var(--ink-dark);
       color: var(--bg-paper);
       font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 700;
-      padding: 5px 10px;
-      margin-top: 6px;
+      padding: 4px 10px;
+      margin-top: 5px;
       white-space: nowrap;
       overflow: hidden;
     }
@@ -104,23 +104,23 @@
       background-color: var(--bg-tint);
       border-top: 2px solid var(--ink-dark);
       border-bottom: 3.5px double var(--ink-dark);
-      padding: 10px 16px;
+      padding: 7px 14px;
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 16px;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 14px;
       align-items: center;
     }
 
     .lead-content {
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 4px;
     }
 
     .lead-header {
       display: flex;
       align-items: baseline;
-      gap: 10px;
+      gap: 8px;
     }
 
     .lead-kicker {
@@ -137,14 +137,14 @@
     }
 
     .lead-headline {
-      font-size: 24.5px;
+      font-size: 23px;
       font-weight: 900;
       line-height: 1.15;
       color: var(--ink-dark);
     }
 
     .lead-summary {
-      font-size: 14px;
+      font-size: 13px;
       line-height: 1.35;
       color: var(--ink-body);
     }
@@ -168,23 +168,23 @@
       display: block;
     }
 
-    /* BY THE NUMBERS */
+    /* BY THE NUMBERS — six boxes */
     .numbers {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      margin-top: 6px;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+      margin-top: 4px;
     }
 
     .num-box {
       border: 1.5px solid var(--ink-dark);
       background-color: var(--bg-paper);
       text-align: center;
-      padding: 5px 6px 4px;
+      padding: 4px 5px 3px;
     }
 
     .num-big {
-      font-size: 27px;
+      font-size: 23px;
       font-weight: 900;
       line-height: 1.05;
       color: var(--accent);
@@ -192,26 +192,26 @@
 
     .num-label {
       font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-      font-size: 10.5px;
+      font-size: 9.5px;
       font-weight: 700;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.3px;
       color: var(--ink-body);
       text-transform: uppercase;
       margin-top: 1px;
+      line-height: 1.2;
     }
 
-    /* COLUMNS FOR CATEGORIZED NEWS */
+    /* COLUMNS FOR CATEGORIZED NEWS — five columns */
     .columns {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
       position: relative;
       flex: 1;
-      margin: 6px 0;
+      margin: 4px 0;
       min-height: 0;
     }
 
-    /* Column Dividers */
     .columns .col:not(:last-child) {
       border-right: 1.5px solid #C8BFA8;
       padding-right: 8px;
@@ -220,7 +220,7 @@
     .col {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 5px;
       min-height: 0;
       overflow: hidden;
     }
@@ -229,26 +229,27 @@
       background-color: var(--ink-dark);
       color: var(--bg-paper);
       font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-      font-size: 13.5px;
+      font-size: 11.5px;
       font-weight: 900;
-      letter-spacing: 2px;
+      letter-spacing: 1.2px;
       text-transform: uppercase;
-      padding: 4px 8px;
+      padding: 3px 6px;
       border-left: 5px solid var(--accent);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      white-space: nowrap;
     }
 
     .col-icon {
-      font-size: 16px;
+      font-size: 14px;
     }
 
     .news-item {
       display: flex;
       flex-direction: column;
       gap: 2px;
-      padding-bottom: 5px;
+      padding-bottom: 4px;
       border-bottom: 1px dashed #C8BFA8;
     }
 
@@ -258,16 +259,63 @@
     }
 
     .news-title {
-      font-size: 15px;
+      font-size: 13.5px;
       font-weight: 820;
       line-height: 1.15;
       color: var(--ink-dark);
     }
 
     .news-desc {
-      font-size: 12.5px;
+      font-size: 11.5px;
       line-height: 1.25;
       color: var(--ink-body);
+    }
+
+    .col-sketch {
+      border: 1px solid #C8BFA8;
+      display: block;
+      width: 100%;
+    }
+
+    /* ALSO TODAY — short items strip */
+    .also {
+      border-top: 2.5px solid var(--ink-dark);
+      border-bottom: 1.5px solid var(--ink-dark);
+      padding: 4px 10px 5px;
+      background-color: var(--bg-tint);
+    }
+
+    .also-header {
+      font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-size: 11.5px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--ink-dark);
+      padding-bottom: 2px;
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .also-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 3px 14px;
+    }
+
+    .also-item {
+      font-size: 11.5px;
+      line-height: 1.25;
+      color: var(--ink-dark);
+      font-weight: 700;
+    }
+
+    .also-bullet {
+      color: var(--accent);
+      margin-right: 4px;
+      font-weight: 900;
     }
 
     /* BOTTOM ROW: IN BRIEF + FACT FILE */
@@ -276,12 +324,12 @@
       grid-template-columns: 1.12fr 0.88fr;
       gap: 12px;
       border-top: 2.5px solid var(--ink-dark);
-      padding-top: 6px;
+      padding-top: 4px;
     }
 
     .briefs-box {
       background-color: var(--bg-tint);
-      padding: 7px 12px;
+      padding: 6px 12px;
     }
 
     .briefs-header {
@@ -293,17 +341,17 @@
       color: var(--accent);
       border-bottom: 1px solid var(--ink-dark);
       padding-bottom: 2px;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
 
     .briefs-list {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 3px;
     }
 
     .brief-line {
-      font-size: 12.5px;
+      font-size: 12px;
       line-height: 1.25;
       color: var(--ink-dark);
       font-weight: 700;
@@ -319,7 +367,7 @@
     .factfile {
       border: 1.5px solid var(--ink-dark);
       background-color: var(--bg-paper);
-      padding: 6px 10px 7px;
+      padding: 4px 10px 5px;
     }
 
     .factfile-header {
@@ -331,7 +379,7 @@
       color: var(--accent);
       border-bottom: 1px solid var(--ink-dark);
       padding-bottom: 2px;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
       display: flex;
       justify-content: space-between;
     }
@@ -339,15 +387,15 @@
     .factfile-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 3px 12px;
+      gap: 2px 12px;
     }
 
     .fact {
-      font-size: 11.5px;
+      font-size: 11px;
       line-height: 1.3;
       color: var(--ink-body);
       border-bottom: 1px dotted #C8BFA8;
-      padding-bottom: 2px;
+      padding-bottom: 1px;
     }
 
     .fact b {
@@ -361,9 +409,9 @@
       display: flex;
       justify-content: space-between;
       border-top: 1px solid var(--ink-dark);
-      padding-top: 4px;
-      margin-top: 6px;
-      font-size: 11px;
+      padding-top: 2px;
+      margin-top: 4px;
+      font-size: 10.5px;
       font-style: italic;
       color: var(--ink-body);
     }
@@ -382,7 +430,9 @@
       <span class="ticker-label">LATEST</span>
       <span>ICJ: Myanmar committed genocide</span>
       <span class="ticker-sep">•</span>
-      <span>Cyclone Akvan makes landfall in India</span>
+      <span>UN chief race stalls after 8 rounds</span>
+      <span class="ticker-sep">•</span>
+      <span>US approved 900,000 AI chips for China</span>
       <span class="ticker-sep">•</span>
       <span>Anthropic shares +17% on debut</span>
     </div>
@@ -402,12 +452,9 @@
       <div class="lead-ill">
         <svg class="lead-ill-img" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
           <rect width="200" height="80" fill="#F6F1E6"/>
-          <!-- Sun -->
           <circle cx="16" cy="13" r="6" fill="none" stroke="#8B1A1A" stroke-width="1"/>
-          <!-- Courthouse pediment -->
           <path d="M 60 26 L 100 10 L 140 26 Z" fill="#ECE4D4" stroke="#262626" stroke-width="1.2"/>
           <circle cx="100" cy="20" r="4" fill="none" stroke="#8B1A1A" stroke-width="1"/>
-          <!-- Columns -->
           <g stroke="#262626" stroke-width="1.2">
             <line x1="68" y1="28" x2="68" y2="54"/>
             <line x1="84" y1="28" x2="84" y2="54"/>
@@ -415,33 +462,28 @@
             <line x1="116" y1="28" x2="116" y2="54"/>
             <line x1="132" y1="28" x2="132" y2="54"/>
           </g>
-          <!-- Base and steps -->
           <line x1="58" y1="54" x2="142" y2="54" stroke="#262626" stroke-width="1.5"/>
           <line x1="54" y1="58" x2="146" y2="58" stroke="#262626" stroke-width="1"/>
           <line x1="50" y1="62" x2="150" y2="62" stroke="#262626" stroke-width="1"/>
-          <!-- Scales of justice, left -->
           <g stroke="#262626" stroke-width="1">
             <line x1="28" y1="40" x2="28" y2="58"/>
             <line x1="18" y1="44" x2="38" y2="44"/>
             <path d="M 18 44 L 14 52 L 22 52 Z" fill="none"/>
             <path d="M 38 44 L 34 52 L 42 52 Z" fill="none"/>
           </g>
-          <!-- Scales of justice, right -->
           <g stroke="#262626" stroke-width="1">
             <line x1="172" y1="40" x2="172" y2="58"/>
             <line x1="162" y1="44" x2="182" y2="44"/>
             <path d="M 162 44 L 158 52 L 166 52 Z" fill="none"/>
             <path d="M 182 44 L 178 52 L 186 52 Z" fill="none"/>
           </g>
-          <!-- Ground line -->
           <line x1="4" y1="66" x2="196" y2="66" stroke="#262626" stroke-width="1"/>
-          <!-- Label -->
           <text x="100" y="75" font-size="6" font-family="sans-serif" font-weight="bold" fill="#262626" text-anchor="middle">THE HAGUE · PEACE PALACE · HISTORIC VERDICT</text>
         </svg>
       </div>
     </section>
 
-    <!-- BY THE NUMBERS -->
+    <!-- BY THE NUMBERS — six boxes -->
     <section class="numbers">
       <div class="num-box">
         <div class="num-big">$2T</div>
@@ -450,6 +492,14 @@
       <div class="num-box">
         <div class="num-big">+17%</div>
         <div class="num-label">Anthropic shares, day one</div>
+      </div>
+      <div class="num-box">
+        <div class="num-big">900,000</div>
+        <div class="num-label">AI chips approved for China</div>
+      </div>
+      <div class="num-box">
+        <div class="num-big">$3.9T</div>
+        <div class="num-label">data-centre spend by 2030</div>
       </div>
       <div class="num-box">
         <div class="num-big">120,000</div>
@@ -461,7 +511,7 @@
       </div>
     </section>
 
-    <!-- CATEGORIZED NEWS WITH ILLUSTRATIONS -->
+    <!-- CATEGORIZED NEWS — five columns -->
     <section class="columns">
       <!-- POLITICS -->
       <div class="col">
@@ -475,19 +525,18 @@
           <p class="news-desc">The three leaders issued a joint declaration in Shenzhen calling for UN reform and talks to reduce nuclear risks.</p>
         </div>
 
-        <!-- Declaration document sketch -->
-        <svg viewBox="0 0 100 28" xmlns="http://www.w3.org/2000/svg" style="border: 1px solid #C8BFA8;">
-          <rect width="100" height="28" fill="#ECE4D4"/>
-          <rect x="36" y="4" width="28" height="20" fill="#F6F1E6" stroke="#262626" stroke-width="0.8"/>
-          <line x1="40" y1="9" x2="60" y2="9" stroke="#8B1A1A" stroke-width="1"/>
-          <line x1="40" y1="13" x2="60" y2="13" stroke="#262626" stroke-width="0.6"/>
-          <line x1="40" y1="17" x2="56" y2="17" stroke="#262626" stroke-width="0.6"/>
-          <line x1="40" y1="21" x2="52" y2="21" stroke="#262626" stroke-width="0.6"/>
-          <path d="M 70 20 L 78 12" stroke="#262626" stroke-width="1.2"/>
-          <text x="6" y="12" font-size="5" font-family="sans-serif" font-weight="bold" fill="#8B1A1A">PEACE</text>
-          <text x="6" y="19" font-size="4" font-family="sans-serif">DECLARATION</text>
-          <text x="80" y="12" font-size="4.5" font-family="sans-serif">SHENZHEN</text>
-          <text x="80" y="19" font-size="4.5" font-family="sans-serif">SUMMIT</text>
+        <svg class="col-sketch" viewBox="0 0 100 24" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="24" fill="#ECE4D4"/>
+          <rect x="36" y="3" width="28" height="18" fill="#F6F1E6" stroke="#262626" stroke-width="0.8"/>
+          <line x1="40" y1="7" x2="60" y2="7" stroke="#8B1A1A" stroke-width="1"/>
+          <line x1="40" y1="11" x2="60" y2="11" stroke="#262626" stroke-width="0.6"/>
+          <line x1="40" y1="15" x2="56" y2="15" stroke="#262626" stroke-width="0.6"/>
+          <line x1="40" y1="19" x2="52" y2="19" stroke="#262626" stroke-width="0.6"/>
+          <path d="M 70 18 L 78 11" stroke="#262626" stroke-width="1.2"/>
+          <text x="5" y="10" font-size="5" font-family="sans-serif" font-weight="bold" fill="#8B1A1A">PEACE</text>
+          <text x="5" y="17" font-size="4" font-family="sans-serif">DECLARATION</text>
+          <text x="79" y="10" font-size="4.5" font-family="sans-serif">SHENZHEN</text>
+          <text x="79" y="17" font-size="4.5" font-family="sans-serif">SUMMIT</text>
         </svg>
 
         <div class="news-item">
@@ -496,8 +545,8 @@
         </div>
 
         <div class="news-item">
-          <h2 class="news-title">Trump pardons Pete Rose</h2>
-          <p class="news-desc">The president posthumously pardoned baseball legend Pete Rose for tax evasion.</p>
+          <h2 class="news-title">UN chief race stalls after 8 rounds</h2>
+          <p class="news-desc">After eight rounds, the Security Council's five veto powers have not agreed on a successor to António Guterres.</p>
         </div>
       </div>
 
@@ -513,18 +562,17 @@
           <p class="news-desc">Putin said Moscow would hit back hard after Ukraine struck the Crimea Bridge a third time this week, dropping any idea of a moratorium on energy and shipping attacks.</p>
         </div>
 
-        <!-- Bridge sketch -->
-        <svg viewBox="0 0 100 28" xmlns="http://www.w3.org/2000/svg" style="border: 1px solid #C8BFA8;">
-          <rect width="100" height="28" fill="#ECE4D4"/>
-          <line x1="6" y1="22" x2="94" y2="22" stroke="#262626" stroke-width="1.5"/>
-          <line x1="20" y1="22" x2="20" y2="10" stroke="#262626" stroke-width="1"/>
-          <line x1="50" y1="22" x2="50" y2="8" stroke="#262626" stroke-width="1"/>
-          <line x1="80" y1="22" x2="80" y2="10" stroke="#262626" stroke-width="1"/>
-          <line x1="20" y1="10" x2="50" y2="20" stroke="#262626" stroke-width="0.7"/>
-          <line x1="50" y1="8" x2="80" y2="20" stroke="#262626" stroke-width="0.7"/>
-          <line x1="20" y1="10" x2="80" y2="10" stroke="#8B1A1A" stroke-width="0.8"/>
-          <text x="6" y="8" font-size="5" font-family="sans-serif" font-weight="bold" fill="#8B1A1A">BRIDGE</text>
-          <text x="78" y="8" font-size="4.5" font-family="sans-serif">3RD HIT</text>
+        <svg class="col-sketch" viewBox="0 0 100 24" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="24" fill="#ECE4D4"/>
+          <line x1="6" y1="19" x2="94" y2="19" stroke="#262626" stroke-width="1.5"/>
+          <line x1="20" y1="19" x2="20" y2="9" stroke="#262626" stroke-width="1"/>
+          <line x1="50" y1="19" x2="50" y2="7" stroke="#262626" stroke-width="1"/>
+          <line x1="80" y1="19" x2="80" y2="9" stroke="#262626" stroke-width="1"/>
+          <line x1="20" y1="9" x2="50" y2="17" stroke="#262626" stroke-width="0.7"/>
+          <line x1="50" y1="7" x2="80" y2="17" stroke="#262626" stroke-width="0.7"/>
+          <line x1="20" y1="9" x2="80" y2="9" stroke="#8B1A1A" stroke-width="0.8"/>
+          <text x="5" y="7" font-size="5" font-family="sans-serif" font-weight="bold" fill="#8B1A1A">BRIDGE</text>
+          <text x="76" y="7" font-size="4.5" font-family="sans-serif">3RD HIT</text>
         </svg>
 
         <div class="news-item">
@@ -533,8 +581,8 @@
         </div>
 
         <div class="news-item">
-          <h2 class="news-title">Riyadh's tallest tower hit in Houthi strike</h2>
-          <p class="news-desc">Riyadh's tallest skyscraper, headquarters of the Saudi sovereign wealth fund, was struck in a Houthi attack.</p>
+          <h2 class="news-title">Europe ready for talks with Russia on ending war</h2>
+          <p class="news-desc">European leaders said they are ready for talks with Russia on ending the war.</p>
         </div>
       </div>
 
@@ -550,14 +598,13 @@
           <p class="news-desc">Anthropic closed 17% higher in its record Nasdaq debut, reaching a $2 trillion valuation and passing SpaceX's June listing.</p>
         </div>
 
-        <!-- Rising chart sketch -->
-        <svg viewBox="0 0 100 28" xmlns="http://www.w3.org/2000/svg" style="border: 1px solid #C8BFA8;">
-          <rect width="100" height="28" fill="#ECE4D4"/>
-          <path d="M 8 23 L 24 19 L 38 21 L 54 13 L 70 15 L 88 6" stroke="#8B1A1A" stroke-width="1.5" fill="none"/>
-          <path d="M 88 6 L 82 6 M 88 6 L 87 11" stroke="#8B1A1A" stroke-width="1.2" fill="none"/>
-          <text x="8" y="10" font-size="6" font-family="sans-serif" font-weight="bold" fill="#262626">$2T</text>
-          <text x="62" y="25" font-size="5" font-family="sans-serif" font-weight="bold" fill="#8B1A1A">IPO ▲</text>
-          <text x="8" y="26" font-size="4.5" font-family="sans-serif">ANTHROPIC</text>
+        <svg class="col-sketch" viewBox="0 0 100 24" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="24" fill="#ECE4D4"/>
+          <path d="M 8 20 L 24 17 L 38 18 L 54 12 L 70 13 L 88 5" stroke="#8B1A1A" stroke-width="1.5" fill="none"/>
+          <path d="M 88 5 L 82 5 M 88 5 L 87 10" stroke="#8B1A1A" stroke-width="1.2" fill="none"/>
+          <text x="7" y="9" font-size="6" font-family="sans-serif" font-weight="bold" fill="#262626">$2T</text>
+          <text x="60" y="22" font-size="5" font-family="sans-serif" font-weight="bold" fill="#8B1A1A">IPO ▲</text>
+          <text x="7" y="22" font-size="4.5" font-family="sans-serif">ANTHROPIC</text>
         </svg>
 
         <div class="news-item">
@@ -566,8 +613,8 @@
         </div>
 
         <div class="news-item">
-          <h2 class="news-title">Hormuz tanker attacks as oil prices slide</h2>
-          <p class="news-desc">Iran intensified attacks on tankers near the Strait of Hormuz just as oil prices slide; three tankers caught fire after hitting mines.</p>
+          <h2 class="news-title">Wall Street ends sharply lower</h2>
+          <p class="news-desc">US stocks slumped as Anthropic's debut failed to revive faded enthusiasm for AI.</p>
         </div>
       </div>
 
@@ -583,17 +630,16 @@
           <p class="news-desc">The severe cyclone began making landfall on India's east coast on Friday; over 120,000 people were evacuated in Odisha and Andhra Pradesh.</p>
         </div>
 
-        <!-- Cyclone spiral sketch -->
-        <svg viewBox="0 0 100 28" xmlns="http://www.w3.org/2000/svg" style="border: 1px solid #C8BFA8;">
-          <rect width="100" height="28" fill="#ECE4D4"/>
-          <path d="M 50 14 m -9 0 a 9 9 0 1 1 9 9 a 6.5 6.5 0 1 1 -6.5 -6.5 a 4 4 0 1 1 4 4" fill="none" stroke="#8B1A1A" stroke-width="1.2"/>
-          <circle cx="50" cy="14" r="1.5" fill="#262626"/>
-          <line x1="8" y1="6" x2="20" y2="6" stroke="#262626" stroke-width="0.8"/>
-          <line x1="8" y1="10" x2="16" y2="10" stroke="#262626" stroke-width="0.8"/>
-          <line x1="80" y1="22" x2="92" y2="22" stroke="#262626" stroke-width="0.8"/>
-          <line x1="84" y1="18" x2="92" y2="18" stroke="#262626" stroke-width="0.8"/>
-          <text x="6" y="24" font-size="5" font-family="sans-serif" font-weight="bold" fill="#8B1A1A">AKVAN</text>
-          <text x="74" y="10" font-size="5" font-family="sans-serif">LANDFALL</text>
+        <svg class="col-sketch" viewBox="0 0 100 24" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="24" fill="#ECE4D4"/>
+          <path d="M 50 12 m -8 0 a 8 8 0 1 1 8 8 a 5.8 5.8 0 1 1 -5.8 -5.8 a 3.5 3.5 0 1 1 3.5 3.5" fill="none" stroke="#8B1A1A" stroke-width="1.2"/>
+          <circle cx="50" cy="12" r="1.4" fill="#262626"/>
+          <line x1="8" y1="5" x2="20" y2="5" stroke="#262626" stroke-width="0.8"/>
+          <line x1="8" y1="9" x2="16" y2="9" stroke="#262626" stroke-width="0.8"/>
+          <line x1="80" y1="19" x2="92" y2="19" stroke="#262626" stroke-width="0.8"/>
+          <line x1="84" y1="15" x2="92" y2="15" stroke="#262626" stroke-width="0.8"/>
+          <text x="5" y="21" font-size="5" font-family="sans-serif" font-weight="bold" fill="#8B1A1A">AKVAN</text>
+          <text x="72" y="9" font-size="5" font-family="sans-serif">LANDFALL</text>
         </svg>
 
         <div class="news-item">
@@ -602,9 +648,64 @@
         </div>
 
         <div class="news-item">
-          <h2 class="news-title">APEC summit concludes in Shenzhen</h2>
-          <p class="news-desc">Leaders wrapped up the APEC summit in Shenzhen, adopting a joint framework hailed as a milestone for regional trade.</p>
+          <h2 class="news-title">Tonga declares emergency as drought worsens</h2>
+          <p class="news-desc">Tonga declared a state of emergency as an El Niño drought worsens.</p>
         </div>
+      </div>
+
+      <!-- SPORT -->
+      <div class="col">
+        <div class="section-header-box">
+          <span>SPORT</span>
+          <span class="col-icon">🏆</span>
+        </div>
+
+        <div class="news-item">
+          <h2 class="news-title">GTA 6 launches in India</h2>
+          <p class="news-desc">Grand Theft Auto VI launched in India, bringing a whole new world to Vice City — a day after its global release.</p>
+        </div>
+
+        <svg class="col-sketch" viewBox="0 0 100 24" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="24" fill="#ECE4D4"/>
+          <path d="M 42 5 L 58 5 L 56 15 Q 50 19 44 15 Z" fill="#F6F1E6" stroke="#262626" stroke-width="1"/>
+          <path d="M 42 7 Q 36 7 36 11 Q 36 14 41 14" fill="none" stroke="#262626" stroke-width="1"/>
+          <path d="M 58 7 Q 64 7 64 11 Q 64 14 59 14" fill="none" stroke="#262626" stroke-width="1"/>
+          <line x1="50" y1="18" x2="50" y2="21" stroke="#262626" stroke-width="1.2"/>
+          <line x1="44" y1="21" x2="56" y2="21" stroke="#262626" stroke-width="1.2"/>
+          <text x="68" y="10" font-size="5" font-family="sans-serif" font-weight="bold" fill="#8B1A1A">GTA 6</text>
+          <text x="68" y="17" font-size="4.5" font-family="sans-serif">IN INDIA</text>
+          <text x="8" y="10" font-size="5" font-family="sans-serif" font-weight="bold" fill="#262626">NZ 243/5</text>
+          <text x="8" y="17" font-size="4.5" font-family="sans-serif">NICHOLLS 100*</text>
+        </svg>
+
+        <div class="news-item">
+          <h2 class="news-title">Nicholls century rescues NZ in Wellington Test</h2>
+          <p class="news-desc">New Zealand finished day one at 243 for five; Henry Nicholls hit an unbeaten century and Glenn Phillips scored 94 against India.</p>
+        </div>
+
+        <div class="news-item">
+          <h2 class="news-title">Marquez at match point for 8th MotoGP crown</h2>
+          <p class="news-desc">Marc Marquez aims to secure his eighth MotoGP world title.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALSO TODAY -->
+    <section class="also">
+      <div class="also-header"><span>ALSO TODAY</span><span>20 NOV 2026</span></div>
+      <div class="also-grid">
+        <div class="also-item"><span class="also-bullet">■</span>US approved ~900,000 AI chips for China in six months</div>
+        <div class="also-item"><span class="also-bullet">■</span>California targets Nvidia in China AI chip probe</div>
+        <div class="also-item"><span class="also-bullet">■</span>Trump fires US cyber chief after tech outages</div>
+        <div class="also-item"><span class="also-bullet">■</span>Antibiotics failing against common infections, UN warns</div>
+        <div class="also-item"><span class="also-bullet">■</span>Madhya Pradesh scraps two-child policy after 25 years</div>
+        <div class="also-item"><span class="also-bullet">■</span>Yunus ancestral home set on fire in Bangladesh</div>
+        <div class="also-item"><span class="also-bullet">■</span>India lets Japan use firing ranges for missile tests</div>
+        <div class="also-item"><span class="also-bullet">■</span>F1 to introduce full-time race stewards from 2027</div>
+        <div class="also-item"><span class="also-bullet">■</span>Riyadh's tallest tower hit in Houthi strike</div>
+        <div class="also-item"><span class="also-bullet">■</span>APEC summit concludes in Shenzhen</div>
+        <div class="also-item"><span class="also-bullet">■</span>Trump pardons baseball legend Pete Rose</div>
+        <div class="also-item"><span class="also-bullet">■</span>Japan CPI picks up; BOJ rate hike on track</div>
       </div>
     </section>
 
@@ -614,33 +715,36 @@
         <div class="briefs-header">IN BRIEF</div>
         <div class="briefs-list">
           <div class="brief-line"><span class="brief-bullet">■</span>ICJ: Myanmar committed genocide against Rohingya</div>
+          <div class="brief-line"><span class="brief-bullet">■</span>Trump, Xi, Putin issue "Declaration Towards Peace"</div>
           <div class="brief-line"><span class="brief-bullet">■</span>Putin drops energy truce after Crimea Bridge hit again</div>
-          <div class="brief-line"><span class="brief-bullet">■</span>Israel launches ground operation in central Gaza</div>
           <div class="brief-line"><span class="brief-bullet">■</span>Cyclone Akvan makes landfall; 120,000 evacuated</div>
           <div class="brief-line"><span class="brief-bullet">■</span>Anthropic debuts at $2T valuation, shares +17%</div>
+          <div class="brief-line"><span class="brief-bullet">■</span>UN chief race stalls after eight rounds of voting</div>
         </div>
       </div>
 
       <div class="factfile">
         <div class="factfile-header"><span>THE DAY IN NUMBERS</span><span>20 NOV</span></div>
         <div class="factfile-grid">
-          <div class="fact"><b>$2T</b>Anthropic valuation at debut</div>
-          <div class="fact"><b>+17%</b>Anthropic shares, day one</div>
           <div class="fact"><b>$81.3B</b>largest IPO raise ever</div>
           <div class="fact"><b>$83</b>Anthropic IPO price</div>
+          <div class="fact"><b>900,000</b>AI chips approved for China</div>
+          <div class="fact"><b>$3.9T</b>data-centre spend by 2030</div>
           <div class="fact"><b>120,000</b>evacuated ahead of Akvan</div>
+          <div class="fact"><b>39</b>trains cancelled in Odisha</div>
           <div class="fact"><b>3</b>tankers hit mines off Hormuz</div>
-          <div class="fact"><b>3rd</b>Crimea Bridge strike this week</div>
+          <div class="fact"><b>243/5</b>NZ in Test; Nicholls 100*</div>
+          <div class="fact"><b>3–2</b>India hockey win over NZ</div>
+          <div class="fact"><b>8</b>rounds of UN chief voting</div>
+          <div class="fact"><b>100</b>ICMR tech-transfer deals</div>
           <div class="fact"><b>2017</b>year of the operations ruled on</div>
-          <div class="fact"><b>1st</b>Jeffries would be first Black Speaker</div>
-          <div class="fact"><b>Jan 3</b>Speaker election day</div>
         </div>
       </div>
     </div>
 
     <!-- PAGE FOOTER -->
     <div class="page-footer">
-      <span>Sources: AP · BBC · Reuters · Bloomberg · Al Jazeera</span>
+      <span>Sources: AP · BBC · Reuters · Bloomberg · Al Jazeera · Japan Times · NDTV · NST · UN News</span>
       <span>Compiled from verified reports · All figures as reported on 20 Nov 2026</span>
     </div>
   </main>
